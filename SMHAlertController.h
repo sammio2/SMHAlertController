@@ -18,7 +18,7 @@
  */
 @interface SMHAlertController : UIAlertController
 
-+ (__nonnull SMHAlertController *)alertControllerWithTitle:(nullable NSString *)title message:(nullable NSString *)message;
++ ( SMHAlertController * _Nonnull )alertControllerWithTitle:(nullable NSString *)title message:(nullable NSString *)message;
 
 /**
  *  Calling this method will show the alert controller regardless of the current view heirachy,

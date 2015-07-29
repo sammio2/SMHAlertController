@@ -139,7 +139,7 @@
 
 @interface SMHAlertController ()
 
-typedef void __nullable (^DisplayCompletionBlock)();
+typedef void (^ _Nullable DisplayCompletionBlock)();
 
 /**
  *  The completion block is called on dismissal of the SMHAlertController and is used
@@ -152,7 +152,7 @@ typedef void __nullable (^DisplayCompletionBlock)();
 
 @implementation SMHAlertController
 
-+ (__nonnull SMHAlertController *)alertControllerWithTitle:(nullable NSString *)title message:(nullable NSString *)message
++ (SMHAlertController * _Nonnull )alertControllerWithTitle:(nullable NSString *)title message:(nullable NSString *)message
 {
     
     return [SMHAlertController alertControllerWithTitle:title
